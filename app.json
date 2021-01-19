@@ -1,0 +1,40 @@
+{
+  "id": "ba91c7a4-48d2-413b-8d42-d7bb8b7bcd60",
+  "name": "ALTravelRequisitionManagement",
+  "publisher": "Ujuzitech",
+  "version": "1.0.0.0",
+  "brief": "Travel management and other custome requisition",
+  "description": "Requisition management",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "images/ujuzitech.png",
+  "dependencies": [
+    {
+      "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "name": "System Application",
+      "version": "1.0.0.0"
+    },
+    {
+      "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "publisher": "Microsoft",
+      "name": "Base Application",
+      "version": "15.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "15.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 51600
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://ALTravelRequisitionManagement.com/help/",
+  "showMyCode": true,
+  "target": "OnPrem",
+  "runtime": "4.0"
+  
+}

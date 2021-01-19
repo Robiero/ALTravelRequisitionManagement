@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="DocumentNo_TravelRequestLine">
+          <DataField>DocumentNo_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="EmployeeNo_TravelRequestLine">
+          <DataField>EmployeeNo_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="EmployeeName_TravelRequestLine">
+          <DataField>EmployeeName_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="EntryType_TravelRequestLine">
+          <DataField>EntryType_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="Description_TravelRequestLine">
+          <DataField>Description_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="CurrencyCode_TravelRequestLine">
+          <DataField>CurrencyCode_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="Status_TravelRequestLine">
+          <DataField>Status_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="TransactionDate_TravelRequestLine">
+          <DataField>TransactionDate_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="Department_TravelRequestLine">
+          <DataField>Department_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="Quantity_TravelRequestLine">
+          <DataField>Quantity_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="UnitAmount_TravelRequestLine">
+          <DataField>UnitAmount_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="UnitAmount_TravelRequestLineFormat">
+          <DataField>UnitAmount_TravelRequestLineFormat</DataField>
+        </Field>
+        <Field Name="TotalAmount_TravelRequestLine">
+          <DataField>TotalAmount_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="TotalAmount_TravelRequestLineFormat">
+          <DataField>TotalAmount_TravelRequestLineFormat</DataField>
+        </Field>
+        <Field Name="TravelDate_TravelRequestLine">
+          <DataField>TravelDate_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="TravelFrom_TravelRequestLine">
+          <DataField>TravelFrom_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="TravelTo_TravelRequestLine">
+          <DataField>TravelTo_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="DepartureTime_TravelRequestLine">
+          <DataField>DepartureTime_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="ArrivalTime_TravelRequestLine">
+          <DataField>ArrivalTime_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="PerDiemType_TravelRequestLine">
+          <DataField>PerDiemType_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="BoardType_TravelRequestLine">
+          <DataField>BoardType_TravelRequestLine</DataField>
+        </Field>
+        <Field Name="TitleLbl">
+          <DataField>TitleLbl</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address_CompanyInformation">
+          <DataField>Address_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address2_CompanyInformation">
+          <DataField>Address2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="City_CompanyInformation">
+          <DataField>City_CompanyInformation</DataField>
+        </Field>
+        <Field Name="County_CompanyInformation">
+          <DataField>County_CompanyInformation</DataField>
+        </Field>
+        <Field Name="PhoneNo_CompanyInformation">
+          <DataField>PhoneNo_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Picture_CompanyInformation">
+          <DataField>Picture_CompanyInformation</DataField>
+        </Field>
+        <Field Name="GBranchDescription">
+          <DataField>GBranchDescription</DataField>
+        </Field>
+        <Field Name="GDepartmentDescription">
+          <DataField>GDepartmentDescription</DataField>
+        </Field>
+        <Field Name="linestatus_TravelRequestLine">
+          <DataField>linestatus_TravelRequestLine</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

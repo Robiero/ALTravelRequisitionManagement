@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="No_TravelRequestHeader">
+          <DataField>No_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Department_TravelRequestHeader">
+          <DataField>Department_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="EmployeeNo_TravelRequestHeader">
+          <DataField>EmployeeNo_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="EmployeeName_TravelRequestHeader">
+          <DataField>EmployeeName_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="RaisedDate_TravelRequestHeader">
+          <DataField>RaisedDate_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="RaisedBy_TravelRequestHeader">
+          <DataField>RaisedBy_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="ApprovalStatus_TravelRequestHeader">
+          <DataField>ApprovalStatus_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="NoSeries_TravelRequestHeader">
+          <DataField>NoSeries_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="CurrencyCode_TravelRequestHeader">
+          <DataField>CurrencyCode_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Location_TravelRequestHeader">
+          <DataField>Location_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="HRApprovalStatus_TravelRequestHeader">
+          <DataField>HRApprovalStatus_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="ApprovalBy_TravelRequestHeader">
+          <DataField>ApprovalBy_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="EmployeeGrade_TravelRequestHeader">
+          <DataField>EmployeeGrade_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TravelFromDate_TravelRequestHeader">
+          <DataField>TravelFromDate_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TravelToDate_TravelRequestHeader">
+          <DataField>TravelToDate_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="NoofDays_TravelRequestHeader">
+          <DataField>NoofDays_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="NoofDays_TravelRequestHeaderFormat">
+          <DataField>NoofDays_TravelRequestHeaderFormat</DataField>
+        </Field>
+        <Field Name="TravelPurpose_TravelRequestHeader">
+          <DataField>TravelPurpose_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TravelFrom_TravelRequestHeader">
+          <DataField>TravelFrom_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TravelTo_TravelRequestHeader">
+          <DataField>TravelTo_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="AccomodationVendorNo_TravelRequestHeader">
+          <DataField>AccomodationVendorNo_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="AccomodationVendorName_TravelRequestHeader">
+          <DataField>AccomodationVendorName_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TravelMode_TravelRequestHeader">
+          <DataField>TravelMode_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Amount_TravelRequestHeader">
+          <DataField>Amount_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Amount_TravelRequestHeaderFormat">
+          <DataField>Amount_TravelRequestHeaderFormat</DataField>
+        </Field>
+        <Field Name="AccomodationType_TravelRequestHeader">
+          <DataField>AccomodationType_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="HRApprovalBy_TravelRequestHeader">
+          <DataField>HRApprovalBy_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Approver_TravelRequestHeader">
+          <DataField>Approver_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="HRManagerApprover_TravelRequestHeader">
+          <DataField>HRManagerApprover_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="ApprovalDate_TravelRequestHeader">
+          <DataField>ApprovalDate_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="HRApprovalDate_TravelRequestHeader">
+          <DataField>HRApprovalDate_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="ApprovalRemarks_TravelRequestHeader">
+          <DataField>ApprovalRemarks_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="HRBPApprover_TravelRequestHeader">
+          <DataField>HRBPApprover_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="HRApprovalRemarks_TravelRequestHeader">
+          <DataField>HRApprovalRemarks_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Branch_TravelRequestHeader">
+          <DataField>Branch_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TravelVendorNo_TravelRequestHeader">
+          <DataField>TravelVendorNo_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TravelVendorName_TravelRequestHeader">
+          <DataField>TravelVendorName_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Title_TravelRequestHeader">
+          <DataField>Title_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="PhysicalLocation_TravelRequestHeader">
+          <DataField>PhysicalLocation_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Address_TravelRequestHeader">
+          <DataField>Address_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="CellNumber_TravelRequestHeader">
+          <DataField>CellNumber_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TelephoneNumber_TravelRequestHeader">
+          <DataField>TelephoneNumber_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="DirectTelephone_TravelRequestHeader">
+          <DataField>DirectTelephone_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="FaxNumber_TravelRequestHeader">
+          <DataField>FaxNumber_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="QtyRequested_TravelRequestHeader">
+          <DataField>QtyRequested_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Type_TravelRequestHeader">
+          <DataField>Type_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="ProcManager_TravelRequestHeader">
+          <DataField>ProcManager_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="StampType_TravelRequestHeader">
+          <DataField>StampType_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Justification_TravelRequestHeader">
+          <DataField>Justification_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="RequestedBy">
+          <DataField>RequestedBy</DataField>
+        </Field>
+        <Field Name="LineApprover">
+          <DataField>LineApprover</DataField>
+        </Field>
+        <Field Name="Branch">
+          <DataField>Branch</DataField>
+        </Field>
+        <Field Name="Department">
+          <DataField>Department</DataField>
+        </Field>
+        <Field Name="HODProc">
+          <DataField>HODProc</DataField>
+        </Field>
+        <Field Name="ProcManagerApprovalDate_TravelRequestHeader">
+          <DataField>ProcManagerApprovalDate_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="StampTypes_TravelRequestHeader">
+          <DataField>StampTypes_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="StampName_TravelRequestHeader">
+          <DataField>StampName_TravelRequestHeader</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

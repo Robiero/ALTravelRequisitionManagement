@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="NoSeries_TravelRequestHeader">
+          <DataField>NoSeries_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Branch_TravelRequestHeader">
+          <DataField>Branch_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Title_TravelRequestHeader">
+          <DataField>Title_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="PhysicalLocation_TravelRequestHeader">
+          <DataField>PhysicalLocation_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Address_TravelRequestHeader">
+          <DataField>Address_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="CellNumber_TravelRequestHeader">
+          <DataField>CellNumber_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TelephoneNumber_TravelRequestHeader">
+          <DataField>TelephoneNumber_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="DirectTelephone_TravelRequestHeader">
+          <DataField>DirectTelephone_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="FaxNumber_TravelRequestHeader">
+          <DataField>FaxNumber_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="QtyRequested_TravelRequestHeader">
+          <DataField>QtyRequested_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="No_TravelRequestHeader">
+          <DataField>No_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Department_TravelRequestHeader">
+          <DataField>Department_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="EmployeeNo_TravelRequestHeader">
+          <DataField>EmployeeNo_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="EmployeeName_TravelRequestHeader">
+          <DataField>EmployeeName_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="ApprovalStatus_TravelRequestHeader">
+          <DataField>ApprovalStatus_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="EmailAddress_TravelRequestHeader">
+          <DataField>EmailAddress_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="Name_TravelRequestHeader">
+          <DataField>Name_TravelRequestHeader</DataField>
+        </Field>
+        <Field Name="TitleLbl">
+          <DataField>TitleLbl</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address_CompanyInformation">
+          <DataField>Address_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address2_CompanyInformation">
+          <DataField>Address2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="City_CompanyInformation">
+          <DataField>City_CompanyInformation</DataField>
+        </Field>
+        <Field Name="County_CompanyInformation">
+          <DataField>County_CompanyInformation</DataField>
+        </Field>
+        <Field Name="PhoneNo_CompanyInformation">
+          <DataField>PhoneNo_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Picture_CompanyInformation">
+          <DataField>Picture_CompanyInformation</DataField>
+        </Field>
+        <Field Name="GDeptDescription">
+          <DataField>GDeptDescription</DataField>
+        </Field>
+        <Field Name="GBranchDescription">
+          <DataField>GBranchDescription</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
